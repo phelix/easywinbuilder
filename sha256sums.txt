@@ -1,0 +1,13 @@
+2a3afe19c180f8373fa02ff00254d5394fec0349f5804e0ad2f6067854ff28ac  download/7za920.zip
+a004d9b3fa95e956383693b86fce1b68805a6f71c2e68944fa813de0fb8c8102  download/boost_1_58_0.tar.gz
+12edc0df75bf9abd7f82f821795bcee50f42cb2e5f76a6a281b85732798364ef  download/db-4.8.30.NC.tar.gz
+247ca18dd83f53deb1328be17e4b1be31514cedfc1e3424f672bf11fd7e0d60d  download/gtest-1.7.0.zip
+fda28e06d9a701abecfac3bba6656836e4be494b76600ad9a301df62b9d10561  download/i686-4.9.2-release-posix-dwarf-rt_v4-rev3.7z
+02f96b6bad5a381d36d7ba7a5d9be3b06f7fe6c274da00707509c23592a073ad  download/libpng-1.6.16.tar.gz
+bc5f73c7b0056252c1888a80e6075787a1e1e9112b808f863a245483ff79859c  download/miniupnpc-1.8.tar.gz
+8f9faeaebad088e772f4ef5e38252d472be4d878c6b3a2718c10a4fcebe7a41c  download/openssl-1.0.1k.tar.gz
+2038c49d23b5ca19e2218ca89f06df18fe6d870b4c6b54c0498548ef88771f6f  download/pkg-config-lite-0.28-1_bin-win32.zip
+2667b7cda4a6bc8a09e5463adf3b5984e08d94e72338277affa8594d8b6e5cd1  download/protobuf-2.6.1.tar.gz
+05ff33fc43ff9ee4662eb1e19dee5da30f987843b5bd78f7e80a7483433bb736  download/qtbase-opensource-src-5.3.2.zip
+314616d223ab3674af51d008ebff4f3b693bb80d5bee8c268e86d06a1fa2230c  download/qttools-opensource-src-5.3.2.zip
+48c82a35369e54b613f738adf2a3420f8a25636182d272635202a5f99bb1fb9b  download/v0.10.2.tar.gz
