@@ -9,7 +9,7 @@ set INCLUDE=%INCLUDE:/=\%
 set LIB=%EWBPATH%%LIB%/%LIBPNG%/.libs;%EWBPATH%%LIB%/%OPENSSL%
 set LIB=%LIB:/=\%
 
-cd %QTPATH%
+cd %QTPATH:/=\%
 
 configure.exe -release -opensource -confirm-license -static -make libs -no-sql-sqlite -no-opengl -system-zlib -qt-pcre -no-icu -no-gif -system-libpng -no-libjpeg -no-freetype -no-angle -openssl -no-dbus -no-audio-backend -no-wmf-backend -no-qml-debug -no-vcproj
 @if errorlevel 1 goto error
@@ -17,16 +17,16 @@ configure.exe -release -opensource -confirm-license -static -make libs -no-sql-s
 mingw32-make
 @if errorlevel 1 goto error
 
-set PATH=%PATH%;%QTPATH%/bin
+set PATH=%PATH:/=\%;%QTPATH:/=\%/bin
 
-cd %QTBASEPATH%\qttools-opensource-src-%QTVERSION%
+cd %QTBASEPATH:/=\%\qttools-opensource-src-%QTVERSION%
 qmake qttools.pro
 @if errorlevel 1 goto error
 
 mingw32-make
 @if errorlevel 1 goto error
 
-cd %EWBPATH%
+cd %EWBPATH:/=\%
 
 @goto end
 

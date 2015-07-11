@@ -1,6 +1,6 @@
 @call set_vars.bat
 @echo Building boost...
-@cd %LIB%\%BOOST%
+@cd %LIB:/=\%\%BOOST:/=\%
 
 @echo bootstrap...
 call bootstrap.bat mingw
