@@ -10,8 +10,6 @@
 @if errorlevel 1 goto error
 @call 4_run_build_daemon_and_qt.bat
 @if errorlevel 1 goto error
-@call 5_gather_files.bat
-@if errorlevel 1 goto error
 @echo.
 @echo.
 @goto end
