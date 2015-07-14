@@ -24,20 +24,21 @@
 @rem unfortunately 7zip is necessary for compiler extraction
 @set SEVENZIP=7za920
 
-@rem Path variables - use forward slashes
-@set QTBASEPATH=C:/Qt
-@set QTPATH=%QTBASEPATH%/%QTVERSION%
-@rem remove colon
-@set QTPATHMSYS=/%QTPATH::=%
-@set MSYSPATH=C:/MinGW/msys/1.0/bin
-@set MINGWPATH=C:/MinGW
 @rem attention, EWBPATH has trailing slash
 @set EWBPATH=%~dp0
 @rem flip slashes
 @set EWBPATH=%EWBPATH:\=/%
 @rem remove colon
 @set EWBPATHMSYS=/%EWBPATH::=%
+
+@rem Other path variables - use forward slashes!
+@set MINGWPATH=C:/MinGW
+@set MSYSPATH=%MINGWPATH%/msys/1.0/bin
 @set MINGW64PATH=%EWBPATH%mingw32
+@set QTBASEPATH=%EWBPATH%Qt
+@set QTPATH=%QTBASEPATH%/%QTVERSION%
+@rem remove colon
+@set QTPATHMSYS=/%QTPATH::=%
 
 @rem Set system path
 @set PATH=%MINGW64PATH%/bin;%MSYSPATH%
