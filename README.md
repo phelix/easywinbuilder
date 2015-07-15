@@ -1,5 +1,5 @@
-EasyWinBuilder v0.7 for Bitcoin 0.10.2
-============================
+EasyWinBuilder v0.7 for Bitcoin Core
+===========================
 (c) 2014-2015 phelix / blockchained.com - MIT license
 
 Source: https://github.com/phelix/easywinbuilder
