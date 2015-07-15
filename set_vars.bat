@@ -1,6 +1,6 @@
 @rem Coin download
 @set COIN=bitcoin
-@set COINVERSION=0.10.2
+@set COINVERSION=0.11.0
 @set COINARCHIVE=v%COINVERSION%.tar.gz
 @rem folder within COINARCHIVE
 @set COINFOLDER=%COIN%-%COINVERSION%
