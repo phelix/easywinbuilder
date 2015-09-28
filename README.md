@@ -15,6 +15,7 @@ Edit set_vars.bat to change the Bitcoin version or build similarly structured al
 
 ToDo
 -----
+* clean up a little
 * make OpenSSL work with small config
 * use Bitcoin standard Boost version (make it compile)
 * speed up build: only build qttools relevant folders

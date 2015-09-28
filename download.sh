@@ -10,6 +10,7 @@ cd $DOWNLOAD/
 echo Downloading 7zip [unfortunately necessary for compiler extraction]...
 wget -N --no-check-certificate http://7-zip.org/a/$SEVENZIP.zip
 echo Downloading dependencies...
+wget -N --no-check-certificate "https://github.com/libevent/libevent/releases/download/release-$LIBEVENT-stable/libevent-$LIBEVENT-stable.tar.gz" -O libevent-$LIBEVENT-stable.tar.gz
 wget -N --no-check-certificate "http://googletest.googlecode.com/files/$GTEST.zip" -O $GTEST.zip
 wget -N --no-check-certificate "http://download.qt.io/archive/qt/$QTVERSIONMAJOR/$QTVERSION/submodules/qtbase-opensource-src-$QTVERSION.zip"
 wget -N --no-check-certificate "http://download.qt.io/archive/qt/$QTVERSIONMAJOR/$QTVERSION/submodules/qttools-opensource-src-$QTVERSION.zip"

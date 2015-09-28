@@ -3,6 +3,7 @@ a004d9b3fa95e956383693b86fce1b68805a6f71c2e68944fa813de0fb8c8102  download/boost
 12edc0df75bf9abd7f82f821795bcee50f42cb2e5f76a6a281b85732798364ef  download/db-4.8.30.NC.tar.gz
 247ca18dd83f53deb1328be17e4b1be31514cedfc1e3424f672bf11fd7e0d60d  download/gtest-1.7.0.zip
 fda28e06d9a701abecfac3bba6656836e4be494b76600ad9a301df62b9d10561  download/i686-4.9.2-release-posix-dwarf-rt_v4-rev3.7z
+71c2c49f0adadacfdbe6332a372c38cf9c8b7895bb73dabeaa53cdcc1d4e1fa3  download/libevent-2.0.22-stable.tar.gz
 02f96b6bad5a381d36d7ba7a5d9be3b06f7fe6c274da00707509c23592a073ad  download/libpng-1.6.16.tar.gz
 bc5f73c7b0056252c1888a80e6075787a1e1e9112b808f863a245483ff79859c  download/miniupnpc-1.8.tar.gz
 8f9faeaebad088e772f4ef5e38252d472be4d878c6b3a2718c10a4fcebe7a41c  download/openssl-1.0.1k.tar.gz

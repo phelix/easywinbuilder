@@ -1,5 +1,13 @@
 cd $LIB
 
+echo libevent...
+cd libevent-$LIBEVENT-stable
+./configure --disable-shared --disable-openssl --disable-libevent-regress --disable-debug-mode
+if [ ${?} -ne 0 ]; then echo "Libevent config failed."; read -n 1 -s; exit 1;fi
+make
+if [ ${?} -ne 0 ]; then echo "Libevent make failed."; read -n 1 -s; exit 1;fi
+cd ..
+
 echo db...
 cd $BERKELEYDB
 cd build_unix
@@ -29,7 +37,9 @@ echo
 echo libpng...
 cd $LIBPNG
 ./configure --disable-shared
+if [ ${?} -ne 0 ]; then echo "Libpng config failed."; read -n 1 -s; exit 1;fi
 make
+if [ ${?} -ne 0 ]; then echo "Libpng config failed."; read -n 1 -s; exit 1;fi
 cp .libs/libpng16.a .libs/libpng.a
 cd ..
 

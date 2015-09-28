@@ -12,6 +12,7 @@ CPPFLAGS="-I$LIBSH/$OPENSSL/include \
 -I$LIBSH/protobuf-$PROTOBUF/src \
 -I$LIBSH/$MINIUPNPC \
 -I$LIBSH/$LIBPNG \
+-I$LIBSH/libevent-$LIBEVENT-stable \
 $ADDITIONALCCFLAGS"
 export CPPFLAGS
 
@@ -21,7 +22,8 @@ LDFLAGS="-L$LIBSH/$OPENSSL \
 -L$LIBSH/$BERKELEYDB/build_unix \
 -L$LIBSH/$MINIUPNPC/miniupnpc \
 -L$LIBSH/$LIBPNG/.libs \
--L$LIBSH/protobuf-$PROTOBUF/src/.libs"
+-L$LIBSH/protobuf-$PROTOBUF/src/.libs \
+-L$LIBSH/libevent-$LIBEVENT-stable/.libs"
 export LDFLAGS
 
 BOOST_ROOT=$LIBSH/$BOOST

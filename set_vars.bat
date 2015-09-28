@@ -54,6 +54,7 @@
 @rem gtest is needed by protobuf
 @set GTEST=gtest-1.7.0
 @set LIBPNG=libpng-1.6.16
+@set LIBEVENT=2.0.22
 
 @rem Internal paths
 @set DOWNLOAD=download

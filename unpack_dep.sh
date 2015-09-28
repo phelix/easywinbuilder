@@ -18,6 +18,9 @@ tar --atime-preserve -xzvf $DOWNLOAD/$MINIUPNPC.tar.gz --directory $LIB/$MINIUPN
 rm -rf $LIB/$MINIUPNPC/miniupnpc
 mv $LIB/$MINIUPNPC/$MINIUPNPC $LIB/$MINIUPNPC/miniupnpc
 
+echo libevent [$LIBEVENT]
+tar --atime-preserve -xzvf $DOWNLOAD/libevent-$LIBEVENT-stable.tar.gz --directory $LIB > /dev/null
+
 echo libpng [$LIBPNG]
 tar --atime-preserve -xzvf $DOWNLOAD/$LIBPNG.tar.gz --directory $LIB > /dev/null
 
