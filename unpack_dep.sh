@@ -16,7 +16,7 @@ echo  miniupnpc [$MINIUPNPC]
 mkdir -p $LIB/$MINIUPNPC
 tar --atime-preserve -xzvf $DOWNLOAD/$MINIUPNPC.tar.gz --directory $LIB/$MINIUPNPC > /dev/null
 rm -rf $LIB/$MINIUPNPC/miniupnpc
-mv $LIB/$MINIUPNPC/$MINIUPNPC $LIB/$MINIUPNPC/miniupnpc
+mv $LIB/$MINIUPNPC/$MINIUPNPC $LIB/$MINIUPNPC/miniupnpc -u
 
 echo libevent [$LIBEVENT]
 tar --atime-preserve -xzvf $DOWNLOAD/libevent-$LIBEVENT-stable.tar.gz --directory $LIB > /dev/null
@@ -30,7 +30,7 @@ tar --atime-preserve -xzvf $DOWNLOAD/protobuf-$PROTOBUF.tar.gz --directory $LIB 
 echo protobuf - gtest dependency [$GTEST]
 unzip -o $DOWNLOAD/$GTEST.zip -d $LIB > /dev/null
 rm -rf $LIB/protobuf-$PROTOBUF/gtest
-mv $LIB/$GTEST $LIB/protobuf-$PROTOBUF/gtest
+mv $LIB/$GTEST $LIB/protobuf-$PROTOBUF/gtest -u
 
 echo pkg-config-lite [$PKGCONFIGFILE]
 unzip -o $DOWNLOAD/$PKGCONFIGFILE -d $LIB > /dev/null
@@ -40,11 +40,12 @@ echo  berkeleydb [$BERKELEYDB]
 tar --atime-preserve -xzvf $DOWNLOAD/$BERKELEYDB.tar.gz --directory $LIB > /dev/null
 
 echo QT5 base [$QTVERSION]
+rm -rf $QTBASEPATH
 unzip -o $DOWNLOAD/qtbase-opensource-src-$QTVERSION.zip -d $QTBASEPATH > /dev/null
-mv $QTBASEPATH/qtbase-opensource-src-$QTVERSION $QTPATH
+mv $QTBASEPATH/qtbase-opensource-src-$QTVERSION $QTPATH -u -f
 echo QT5 tools [$QTVERSION]
 unzip -o $DOWNLOAD/qttools-opensource-src-$QTVERSION.zip -d $QTBASEPATH > /dev/null
-mv $QTBASEPATH/qttools-opensource-src-$QTVERSION/src/windeployqt/windeployqt.pro $QTBASEPATH/qttools-opensource-src-$QTVERSION/src/windeployqt/windeployqt.pro_
+mv $QTBASEPATH/qttools-opensource-src-$QTVERSION/src/windeployqt/windeployqt.pro $QTBASEPATH/qttools-opensource-src-$QTVERSION/src/windeployqt/windeployqt.pro_ -u -f
 echo > $QTBASEPATH/qttools-opensource-src-$QTVERSION/src/windeployqt/windeployqt.pro
 
 echo  openssl [$OPENSSL]

@@ -12,7 +12,7 @@ CPPFLAGS="-I$LIBSH/$OPENSSL/include \
 -I$LIBSH/protobuf-$PROTOBUF/src \
 -I$LIBSH/$MINIUPNPC \
 -I$LIBSH/$LIBPNG \
--I$LIBSH/libevent-$LIBEVENT-stable \
+-I$LIBSH/libevent-$LIBEVENT-stable/include \
 $ADDITIONALCCFLAGS"
 export CPPFLAGS
 
