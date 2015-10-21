@@ -41,6 +41,7 @@ tar --atime-preserve -xzvf $DOWNLOAD/$BERKELEYDB.tar.gz --directory $LIB > /dev/
 
 echo QT5 base [$QTVERSION]
 rm -rf $QTBASEPATH
+mkdir -p $QTBASEPATH
 unzip -o $DOWNLOAD/qtbase-opensource-src-$QTVERSION.zip -d $QTBASEPATH > /dev/null
 mv $QTBASEPATH/qtbase-opensource-src-$QTVERSION $QTPATH -u -f
 echo QT5 tools [$QTVERSION]
