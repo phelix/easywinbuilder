@@ -1,9 +1,8 @@
-@rem Coin download
-@set COIN=bitcoin
-@set COINVERSION=0.11.0
-@set COINARCHIVE=v%COINVERSION%.tar.gz
+@rem Coin to download - change these for altcoins
+@set COINARCHIVE=bitcoin-0.11.2.tar.gz
+@set COINDOWNLOADPATH=https://bitcoin.org/bin/bitcoin-core-0.11.2/%COINARCHIVE%
 @rem folder within COINARCHIVE
-@set COINFOLDER=%COIN%-%COINVERSION%
+@set COINFOLDER=bitcoin-0.11.2
 
 @rem MinGW (MSYS)
 @set MINGWDLPATH=https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download
@@ -44,12 +43,12 @@
 @set PATH=%MINGW64PATH%/bin;%MSYSPATH%
 
 @rem Dependencies
-@set OPENSSL=openssl-1.0.1k
+@set OPENSSL=openssl-1.0.1p
 @set BERKELEYDB=db-4.8.30.NC
 @set BOOSTSUBVERSION=58
 @set BOOST=boost_1_%BOOSTSUBVERSION%_0
 @set BOOSTVERSION=1.%BOOSTSUBVERSION%.0
-@set MINIUPNPC=miniupnpc-1.8
+@set MINIUPNPC=miniupnpc-1.9.20151008
 @set PROTOBUF=2.6.1
 @rem gtest is needed by protobuf
 @set GTEST=gtest-1.7.0

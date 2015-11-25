@@ -24,7 +24,7 @@ wget -N --no-check-certificate "http://downloads.sourceforge.net/project/pkgconf
 echo
 
 echo Downloading coin source...
-wget --no-check-certificate -N "http://github.com/bitcoin/bitcoin/archive/$COINARCHIVE$COINDOWNLOADPATH" -O $COINARCHIVE
+wget -N --no-check-certificate $COINDOWNLOADPATH -O $COINARCHIVE
 echo
 
 echo Downloading compiler...
